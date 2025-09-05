@@ -1,12 +1,50 @@
 // Global
+html, body {
+    min-height: 100%;
+}
+
 body {
-    background-image: url(../img/background.webp);
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
+    background: /* fade to black */
+        linear-gradient(to bottom, rgba(0,0,0,0) 10%, rgba(0,0,0,1) 100%),
+        url(../img/background.webp) center/cover no-repeat;
+}
+
+div.entry-content {
+    padding-bottom: 25px;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/div.webp");
+    -webkit-mask: url(../img/mask-ripped-top.webp) top / auto 50px repeat-x, linear-gradient(white, white) no-repeat center / 100% calc(100% - 100px), url(../img/mask-ripped-bot.webp) bottom / auto 50px repeat-x;
 }
 
 // Navigation
+div.wrapper-header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    margin-bottom: -5rem;
+}
+
+nav.navbar {
+    height: 150px;
+    align-items: flex-start;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    background: radial-gradient(circle,rgba(255, 243, 204, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+a.nav-link {
+    color: white;
+    text-shadow: 0 0 3px black;
+}
+
 div.navbar-collapse {
     @media (min-width: 768px) {
         justify-content: center;
@@ -19,13 +57,37 @@ ul.ms-auto {
     }
 }
 
-// Miscellaneous
-.sticky {
-    position: sticky;
-    top: 0;
-    z-index: 999;
+// Home
+.cover-home {
+    width: 105%;
+    transform: translateX(-2.5%);
+    min-height: 340px;
 }
 
+.google-maps {
+    padding: 15px;
+    width: 100%;
+    height: 60%;
+}
+
+// Miscellaneous
 .ripped-edges {
     -webkit-mask: url(../img/mask-ripped-top.webp) top / auto 50px repeat-x, linear-gradient(white, white) no-repeat center / 100% calc(100% - 100px), url(../img/mask-ripped-bot.webp) bottom / auto 50px repeat-x;
+}
+
+.hide-when-mobile {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.hide-when-desktop {
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+// Plugin: Events Manager
+div.em-featured-image {
+    padding: .5rem;
 }

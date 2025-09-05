@@ -27,12 +27,14 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 <div class="site" id="page">
 
 	<!-- ******************* The Navbar Area ******************* -->
-	<header id="wrapper-navbar" class="sticky">
+	<div class="wrapper-header">
+		<header id="wrapper-navbar">
 
-		<a class="skip-link <?php echo understrap_get_screen_reader_class( true ); ?>" href="#content">
-			<?php esc_html_e( 'Skip to content', 'understrap' ); ?>
-		</a>
+			<a class="skip-link <?php echo understrap_get_screen_reader_class( true ); ?>" href="#content">
+				<?php esc_html_e( 'Skip to content', 'understrap' ); ?>
+			</a>
 
-		<?php get_template_part( 'global-templates/navbar', $navbar_type . '-' . $bootstrap_version ); ?>
+			<?php get_template_part( 'global-templates/navbar', $navbar_type . '-' . $bootstrap_version ); ?>
 
-	</header><!-- #wrapper-navbar -->
+		</header>
+	</div><!-- #wrapper-navbar -->
