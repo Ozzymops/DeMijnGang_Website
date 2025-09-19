@@ -19,6 +19,7 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<?php wp_head(); ?>
 </head>
 
@@ -29,7 +30,8 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 	<!-- ******************* The Navbar Area ******************* -->
 	<div class="wrapper-header">
 		<header id="wrapper-navbar">
-
+			<div class="nav-background"></div>
+				
 			<a class="skip-link <?php echo understrap_get_screen_reader_class( true ); ?>" href="#content">
 				<?php esc_html_e( 'Skip to content', 'understrap' ); ?>
 			</a>

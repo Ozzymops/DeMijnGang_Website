@@ -25,11 +25,21 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<footer class="site-footer" id="colophon">
 
-					<div class="site-info">
+					<div class="site-copyright">
+						<p><?php $year = date('Y'); echo "© Copyright $year De MijnGang" ?></p>
+						<p>ALLE RECHTEN VOORBEHOUDEN</p>
+					</div><!-- .site-copyright -->
 
-						<?php understrap_site_info(); ?>
+					<div class="site-social">
+						<a href="mailto:demijngang@outlook.com"><i class="fa fa-at" aria-hidden="true"></i></a>
+						<a href="https://www.facebook.com/demijngang/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+						<a href="https://web.whatsapp.com/send?phone=458514900"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+					</div><!-- .site-social -->
 
-					</div><!-- .site-info -->
+					<div class="site-legal">
+						<a href="privacy">Privacyverklaring</a>
+						<a href="terms-of-service">Voorwaarden</a>
+					</div><!-- .site-legal -->
 
 				</footer><!-- #colophon -->
 

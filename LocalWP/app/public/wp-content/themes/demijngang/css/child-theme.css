@@ -14964,6 +14964,14 @@ figure.woocommerce-product-gallery__wrapper {
   display: block;
 }
 
+@font-face {
+  font-family: "Bradley Gratis";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+000-5FF;
+  src: url("BradleyGratis.woff2") format("woff2"), url("BradleyGratis.woff") format("woff");
+}
 html, body {
   min-height: 100%;
 }
@@ -14976,7 +14984,6 @@ body {
 }
 
 div.entry-content {
-  padding-bottom: 25px;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   background-position: center top;
@@ -14986,6 +14993,19 @@ div.entry-content {
   -webkit-mask: url(../img/mask-ripped-top.webp) top/auto 50px repeat-x, linear-gradient(white, white) no-repeat center/100% calc(100% - 100px), url(../img/mask-ripped-bot.webp) bottom/auto 50px repeat-x;
 }
 
+.font-bradleygratis {
+  text-decoration: none;
+  font-family: "Bradley Gratis";
+}
+
+h1.font-bradleygratis.shadowtext, .font-bradleygratis.shadowtext.h1 {
+  text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000;
+}
+
+h2.font-bradleygratis.shadowtext, .font-bradleygratis.shadowtext.h2 {
+  text-shadow: 1.5px 1.5px 0 #000, -1.5px 1.5px 0 #000, -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000;
+}
+
 div.wrapper-header {
   position: sticky;
   top: 0;
@@ -14993,7 +15013,7 @@ div.wrapper-header {
   margin-bottom: -5rem;
 }
 
-nav.navbar {
+div.nav-background {
   height: 150px;
   align-items: flex-start;
   -webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
@@ -15005,6 +15025,17 @@ nav.navbar {
   background: radial-gradient(circle, rgb(255, 243, 204) 0%, rgb(0, 0, 0) 100%);
 }
 
+nav.navbar {
+  --bs-bg-opacity: 0 !important;
+  top: -9rem;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
 a.nav-link {
   color: white;
   text-shadow: 0 0 3px black;
@@ -15022,6 +15053,63 @@ a.nav-link {
   }
 }
 
+@media (max-width: 768px) {
+  ul.navbar-nav, ul.dropdown-menu, li.menu-item {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    background-color: black;
+  }
+  ul.navbar-nav a, ul.dropdown-menu a, li.menu-item a {
+    color: white;
+  }
+}
+
+#wrapper-footer.wrapper {
+  padding: 0.7rem 0;
+}
+
+.site-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .site-footer {
+    flex-direction: column;
+  }
+  .site-footer .site-copyright, .site-footer .site-social, .site-footer .site-legal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.site-footer .site-copyright {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 33%;
+  justify-content: flex-start;
+}
+.site-footer .site-social {
+  display: flex;
+  flex-basis: 33%;
+  justify-content: center;
+  font-size: 48px;
+}
+.site-footer .site-legal {
+  display: flex;
+  flex-basis: 33%;
+  justify-content: flex-end;
+}
+.site-footer p, .site-footer a {
+  color: #c7a56b;
+  margin: 10px;
+}
+.site-footer a:hover {
+  color: white;
+}
+
 .cover-home {
   width: 105%;
   transform: translateX(-2.5%);
@@ -15031,7 +15119,6 @@ a.nav-link {
 .google-maps {
   padding: 15px;
   width: 100%;
-  height: 60%;
 }
 
 .ripped-edges {
@@ -15048,6 +15135,14 @@ a.nav-link {
   .hide-when-desktop {
     display: none;
   }
+}
+
+.entry-header {
+  display: none;
+}
+
+.entry-footer {
+  display: none;
 }
 
 div.em-featured-image {
