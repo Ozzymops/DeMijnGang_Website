@@ -43,6 +43,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				'menu_id'         => 'main-menu',
 				'depth'           => 2,
 				'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+				// 'walker'		  => new Custom_WP_Navwalker(),
 			)
 		);
 		?>

@@ -44,7 +44,6 @@ h1.font-bradleygratis.shadowtext {
 
 h2.font-bradleygratis.shadowtext {
     text-shadow: 1.5px 1.5px 0 #000, -1.5px 1.5px 0 #000, -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000;
-
 }
 
 .wp-block-button {
@@ -73,7 +72,6 @@ div.nav-background {
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
     mask-repeat: no-repeat;
     mask-size: cover;
-    //background: radial-gradient(circle,rgba(255, 243, 204, 1) 0%, rgba(0, 0, 0, 1) 100%);
     background: radial-gradient(circle, $tertiary 0%, $primary 100%);
 }
 
@@ -180,6 +178,10 @@ div.em-featured-image {
 
 // Responsive – Desktop only
 @media (min-width: 768px) {
+    div.nav-background-mobile {
+        display: none;
+    }
+
     .navbar-nav .dropdown:hover .dropdown-menu {
         display: block;
         margin-top: 0;
@@ -230,23 +232,66 @@ div.em-featured-image {
 
 // Responsive – Mobile only
 @media (max-width: 768px) {
-    ul.navbar-nav {
+    div.nav-background-mobile {
         position: absolute;
-        left: 0;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        right: 0;
+        pointer-events: none;
+        z-index: -1;
+        align-items: flex-start;
+        mask-image: radial-gradient(circle at top right, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
+        mask-repeat: no-repeat;
+        mask-size: cover;
+        background: radial-gradient(circle at top right, $tertiary 0%, $primary 40%);
     }
 
-    ul.navbar-nav, ul.dropdown-menu, li.menu-item, a.nav-link, a.dropdown-item {
+    ul.navbar-nav {
+        position: fixed;
+        width: 50vw;
+        height: 100vh;
+        left: 0;
+        background-color: $primary;
+        color: $tertiary;
+    }    
+    
+    //ul.dropdown-menu {
+    //    width: 100%;
+    //    font-size: 30px;
+    //    text-align: center;
+    //    background-color: $primary;
+    //    color: $tertiary;
+    //} 
+
+    ul.dropdown-menu, li.menu-item, a.nav-link, a.dropdown-item {
+        --bs-bg-opacity: 0 !important;
+        background-color: transparent !important;
+        border: none;
         width: 100%;
         font-size: 30px;
         text-align: center;
-        background-color: $primary;
-        color: $tertiary;
-
-        a:hover {
-            color: $hover;
-            transition: color 0.15s ease-in-out;
+        
+        a.dropdown-item {
+            font-style: italic;
         }
-    }       
+
+        ul.dropdown-menu > li.menu-item {
+            list-style: auto !important;
+            list-style-type: disc !important;
+        }
+
+        a.nav-link, a.dropdown-item {
+            color: white;
+            text-shadow: 0 0 4px black;
+        }
+
+        a.nav-link:hover, a.dropdown-item:hover {
+            color: $primary;
+            text-shadow: 0 0 4px $hover;
+            transition: text-shadow 0.15s ease-in-out, color 0.15s ease-in-out;
+        }
+    }
 
     .site-footer {
         flex-direction: column;

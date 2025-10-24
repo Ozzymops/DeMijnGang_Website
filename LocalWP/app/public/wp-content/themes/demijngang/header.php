@@ -31,7 +31,6 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 	<div class="wrapper-header">
 		<header id="wrapper-navbar">
 			<div class="nav-background"></div>
-				
 			<a class="skip-link <?php echo understrap_get_screen_reader_class( true ); ?>" href="#content">
 				<?php esc_html_e( 'Skip to content', 'understrap' ); ?>
 			</a>

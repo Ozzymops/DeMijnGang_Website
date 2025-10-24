@@ -86,3 +86,15 @@ function understrap_child_customize_controls_js() {
 	);
 }
 add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_controls_js' );
+
+add_action('after_setup_theme', function() {
+	if (class_exists('Understrap_WP_Bootstrap_Navwalker')) {
+        add_filter('wp_nav_menu_items', function($items, $args) {
+            if ($args->theme_location === 'primary') {
+                $overlay = '<div class="nav-background-mobile"></div>';
+                $items = $overlay . $items;
+            }
+            return $items;
+        }, 10, 2);
+    }
+});

@@ -21,3 +21,123 @@
 [19-Sep-2025 11:25:09 UTC] PHP Warning:  Undefined variable $date in D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\demijngang\footer.php on line 29
 [19-Sep-2025 11:25:09 UTC] PHP Warning:  Undefined variable $date in D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\demijngang\footer.php on line 29
 [19-Sep-2025 11:25:09 UTC] PHP Warning:  Undefined variable $date in D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\demijngang\footer.php on line 29
+[24-Oct-2025 12:13:30 UTC] PHP Parse error:  syntax error, unexpected identifier "nav", expecting "," or ";" in D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\demijngang\global-templates\navbar-collapse-bootstrap5.php on line 50
+[24-Oct-2025 12:13:30 UTC] PHP Parse error:  syntax error, unexpected identifier "nav", expecting "," or ";" in D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\demijngang\global-templates\navbar-collapse-bootstrap5.php on line 50
+[24-Oct-2025 12:19:35 UTC] PHP Fatal error:  Uncaught Error: Class "Understrap_WP_Bootstrap_Navwalker" not found in D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\demijngang\functions.php:90
+Stack trace:
+#0 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-settings.php(695): include()
+#1 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-config.php(103): require_once('D:\\Projects\\DeM...')
+#2 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-load.php(50): require_once('D:\\Projects\\DeM...')
+#3 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-blog-header.php(13): require_once('D:\\Projects\\DeM...')
+#4 D:\Projects\DeMijnGang_Website\LocalWP\app\public\index.php(17): require('D:\\Projects\\DeM...')
+#5 {main}
+  thrown in D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\demijngang\functions.php on line 90
+[24-Oct-2025 12:19:35 UTC] PHP Fatal error:  Uncaught Error: Class "Understrap_WP_Bootstrap_Navwalker" not found in D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\demijngang\functions.php:90
+Stack trace:
+#0 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-settings.php(695): include()
+#1 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-config.php(103): require_once('D:\\Projects\\DeM...')
+#2 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-load.php(50): require_once('D:\\Projects\\DeM...')
+#3 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-blog-header.php(13): require_once('D:\\Projects\\DeM...')
+#4 D:\Projects\DeMijnGang_Website\LocalWP\app\public\index.php(17): require('D:\\Projects\\DeM...')
+#5 {main}
+  thrown in D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\demijngang\functions.php on line 90
+[24-Oct-2025 12:19:36 UTC] PHP Fatal error:  Uncaught Error: Class "Understrap_WP_Bootstrap_Navwalker" not found in D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\demijngang\functions.php:90
+Stack trace:
+#0 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-settings.php(695): include()
+#1 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-config.php(103): require_once('D:\\Projects\\DeM...')
+#2 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-load.php(50): require_once('D:\\Projects\\DeM...')
+#3 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-blog-header.php(13): require_once('D:\\Projects\\DeM...')
+#4 D:\Projects\DeMijnGang_Website\LocalWP\app\public\index.php(17): require('D:\\Projects\\DeM...')
+#5 {main}
+  thrown in D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\demijngang\functions.php on line 90
+[24-Oct-2025 12:20:13 UTC] PHP Fatal error:  Uncaught Error: Class "Understrap_WP_Bootstrap_Navwalker" not found in D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\demijngang\functions.php:90
+Stack trace:
+#0 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-settings.php(695): include()
+#1 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-config.php(103): require_once('D:\\Projects\\DeM...')
+#2 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-load.php(50): require_once('D:\\Projects\\DeM...')
+#3 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-blog-header.php(13): require_once('D:\\Projects\\DeM...')
+#4 D:\Projects\DeMijnGang_Website\LocalWP\app\public\index.php(17): require('D:\\Projects\\DeM...')
+#5 {main}
+  thrown in D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\demijngang\functions.php on line 90
+[24-Oct-2025 12:20:13 UTC] PHP Fatal error:  Uncaught Error: Class "Understrap_WP_Bootstrap_Navwalker" not found in D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\demijngang\functions.php:90
+Stack trace:
+#0 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-settings.php(695): include()
+#1 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-config.php(103): require_once('D:\\Projects\\DeM...')
+#2 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-load.php(50): require_once('D:\\Projects\\DeM...')
+#3 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-blog-header.php(13): require_once('D:\\Projects\\DeM...')
+#4 D:\Projects\DeMijnGang_Website\LocalWP\app\public\index.php(17): require('D:\\Projects\\DeM...')
+#5 {main}
+  thrown in D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\demijngang\functions.php on line 90
+[24-Oct-2025 12:20:13 UTC] PHP Fatal error:  Uncaught Error: Class "Understrap_WP_Bootstrap_Navwalker" not found in D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\demijngang\functions.php:90
+Stack trace:
+#0 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-settings.php(695): include()
+#1 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-config.php(103): require_once('D:\\Projects\\DeM...')
+#2 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-load.php(50): require_once('D:\\Projects\\DeM...')
+#3 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-blog-header.php(13): require_once('D:\\Projects\\DeM...')
+#4 D:\Projects\DeMijnGang_Website\LocalWP\app\public\index.php(17): require('D:\\Projects\\DeM...')
+#5 {main}
+  thrown in D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\demijngang\functions.php on line 90
+[24-Oct-2025 12:20:23 UTC] PHP Fatal error:  Uncaught Error: Class "Understrap_WP_Bootstrap_Navwalker" not found in D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\demijngang\functions.php:90
+Stack trace:
+#0 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-settings.php(695): include()
+#1 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-config.php(103): require_once('D:\\Projects\\DeM...')
+#2 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-load.php(50): require_once('D:\\Projects\\DeM...')
+#3 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-blog-header.php(13): require_once('D:\\Projects\\DeM...')
+#4 D:\Projects\DeMijnGang_Website\LocalWP\app\public\index.php(17): require('D:\\Projects\\DeM...')
+#5 {main}
+  thrown in D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\demijngang\functions.php on line 90
+[24-Oct-2025 12:20:23 UTC] PHP Fatal error:  Uncaught Error: Class "Understrap_WP_Bootstrap_Navwalker" not found in D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\demijngang\functions.php:90
+Stack trace:
+#0 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-settings.php(695): include()
+#1 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-config.php(103): require_once('D:\\Projects\\DeM...')
+#2 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-load.php(50): require_once('D:\\Projects\\DeM...')
+#3 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-blog-header.php(13): require_once('D:\\Projects\\DeM...')
+#4 D:\Projects\DeMijnGang_Website\LocalWP\app\public\index.php(17): require('D:\\Projects\\DeM...')
+#5 {main}
+  thrown in D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\demijngang\functions.php on line 90
+[24-Oct-2025 12:20:23 UTC] PHP Fatal error:  Uncaught Error: Class "Understrap_WP_Bootstrap_Navwalker" not found in D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\demijngang\functions.php:90
+Stack trace:
+#0 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-settings.php(695): include()
+#1 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-config.php(103): require_once('D:\\Projects\\DeM...')
+#2 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-load.php(50): require_once('D:\\Projects\\DeM...')
+#3 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-blog-header.php(13): require_once('D:\\Projects\\DeM...')
+#4 D:\Projects\DeMijnGang_Website\LocalWP\app\public\index.php(17): require('D:\\Projects\\DeM...')
+#5 {main}
+  thrown in D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\demijngang\functions.php on line 90
+[24-Oct-2025 12:25:21 UTC] PHP Parse error:  syntax error, unexpected identifier "add_filter", expecting "function" or "const" in D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\demijngang\functions.php on line 93
+[24-Oct-2025 12:25:21 UTC] PHP Parse error:  syntax error, unexpected identifier "add_filter", expecting "function" or "const" in D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\demijngang\functions.php on line 93
+[24-Oct-2025 12:25:21 UTC] PHP Parse error:  syntax error, unexpected identifier "add_filter", expecting "function" or "const" in D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\demijngang\functions.php on line 93
+[24-Oct-2025 12:26:27 UTC] PHP Fatal error:  Uncaught Error: Class "Custom_WP_Navwalker" not found in D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\demijngang\global-templates\navbar-collapse-bootstrap5.php:46
+Stack trace:
+#0 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-includes\template.php(812): require()
+#1 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-includes\template.php(745): load_template('D:\\Projects\\DeM...', false, Array)
+#2 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#3 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\demijngang\header.php(38): get_template_part('global-template...', 'collapse-bootst...')
+#4 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-includes\template.php(810): require_once('D:\\Projects\\DeM...')
+#5 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-includes\template.php(745): load_template('D:\\Projects\\DeM...', true, Array)
+#6 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#7 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\understrap\page-templates\fullwidthpage.php(13): get_header()
+#8 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-includes\template.php(812): require('D:\\Projects\\DeM...')
+#9 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-includes\template.php(745): load_template('D:\\Projects\\DeM...', false, Array)
+#10 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#11 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\understrap\page-templates\no-title.php(13): get_template_part('page-templates/...')
+#12 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-includes\template-loader.php(106): include('D:\\Projects\\DeM...')
+#13 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-blog-header.php(19): require_once('D:\\Projects\\DeM...')
+#14 D:\Projects\DeMijnGang_Website\LocalWP\app\public\index.php(17): require('D:\\Projects\\DeM...')
+#15 {main}
+  thrown in D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\demijngang\global-templates\navbar-collapse-bootstrap5.php on line 46
+[24-Oct-2025 12:26:27 UTC] PHP Fatal error:  Uncaught Error: Class "Custom_WP_Navwalker" not found in D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\demijngang\global-templates\navbar-collapse-bootstrap5.php:46
+Stack trace:
+#0 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-includes\template.php(812): require()
+#1 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-includes\template.php(745): load_template('D:\\Projects\\DeM...', false, Array)
+#2 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#3 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\demijngang\header.php(38): get_template_part('global-template...', 'collapse-bootst...')
+#4 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-includes\template.php(810): require_once('D:\\Projects\\DeM...')
+#5 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-includes\template.php(745): load_template('D:\\Projects\\DeM...', true, Array)
+#6 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#7 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\understrap\404.php(11): get_header()
+#8 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-includes\template-loader.php(106): include('D:\\Projects\\DeM...')
+#9 D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-blog-header.php(19): require_once('D:\\Projects\\DeM...')
+#10 D:\Projects\DeMijnGang_Website\LocalWP\app\public\index.php(17): require('D:\\Projects\\DeM...')
+#11 {main}
+  thrown in D:\Projects\DeMijnGang_Website\LocalWP\app\public\wp-content\themes\demijngang\global-templates\navbar-collapse-bootstrap5.php on line 46
