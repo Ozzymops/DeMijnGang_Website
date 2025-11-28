@@ -58,6 +58,92 @@ h2.font-bradleygratis.shadowtext {
     }
 }
 
+.btn, .btn-secondary {
+    background-color: $primary;
+    color: $secondary;
+    --bs-btn-border-color: none;
+    --bs-btn-hover-color: white; // $hover
+    --bs-btn-hover-bg: #3f1902; // $primary
+}
+
+// Post specific
+.page-header {
+    padding: 1rem .5rem 1rem .5rem;
+    text-align: center;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/div.webp");
+    -webkit-mask: url(../img/mask-ripped-top.webp) top / auto 50px repeat-x, linear-gradient(white, white) no-repeat center / 100% calc(100% - 100px), url(../img/mask-ripped-bot.webp) bottom / auto 50px repeat-x;
+
+    h1, h2 {
+        color: white;
+        text-decoration: none;
+        font-family: "Bradley Gratis";
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    h1 {
+        text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000;
+    }
+
+    h2 {
+        text-shadow: 1.5px 1.5px 0 #000, -1.5px 1.5px 0 #000, -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000;
+    }
+}
+
+.post {
+    padding: 1.5rem .5rem 1.5rem .5rem;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/div.webp");
+    -webkit-mask: url(../img/mask-ripped-top.webp) top / auto 50px repeat-x, linear-gradient(white, white) no-repeat center / 100% calc(100% - 100px), url(../img/mask-ripped-bot.webp) bottom / auto 50px repeat-x;
+
+    .entry-header {
+        display: inherit;
+        text-align: center;      
+    }
+
+    .entry-content {
+        min-height: 0 !important;
+        background-image: none;
+        -webkit-mask: none;
+    }
+
+    h1, h2 {
+        color: white;
+        text-decoration: none;
+        font-family: "Bradley Gratis";
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    h1 {
+        text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000;
+    }
+
+    h2 {
+        text-shadow: 1.5px 1.5px 0 #000, -1.5px 1.5px 0 #000, -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000;
+    }
+}
+
+// hide stuff that we won't be using anyway
+div.comments-area {
+    display: none;
+}
+
+nav.post-navigation {
+    display: none;
+}
+
 // Global – header / nav
 div.wrapper-header {
     position: sticky;
@@ -89,6 +175,10 @@ a.nav-link:hover {
     color: $primary;
     text-shadow: 0 0 4px $hover;
     transition: text-shadow 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.navbar-toggler {
+    z-index: 99;
 }
 
 // Global – footer
@@ -146,6 +236,14 @@ a.nav-link:hover {
     width: 100%;
 }
 
+.wp-block-latest-posts.wp-block-latest-posts__list {
+    text-align: center;
+}
+
+.understrap-read-more-link {
+
+}
+
 // Custom Classes
 .ripped-edges {
     -webkit-mask: url(../img/mask-ripped-top.webp) top / auto 50px repeat-x, linear-gradient(white, white) no-repeat center / 100% calc(100% - 100px), url(../img/mask-ripped-bot.webp) bottom / auto 50px repeat-x;
@@ -174,6 +272,45 @@ a.nav-link:hover {
 // Plugin – Events Manager
 div.em-featured-image {
     padding: .5rem;
+}
+
+// Plugin - Ninja Forms
+.ninja-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.ninja-alignleft {
+    float: left;
+    width: calc(50% - 20px);
+    margin-right: 10px;
+}
+
+.ninja-alignright {
+    float: right;
+    clear: none !important;
+    width: calc(50% - 20px);
+    margin-left: 10px;
+}
+
+.ninja-sendbutton {
+    background-color: $primary;
+    color: $secondary;
+
+    .ninja-sendbutton:hover {
+        color: $hover;
+        transition: color 0.15s ease-in-out;
+    }
+}
+
+.nf-field-element > input {
+    background: $primary;
+    color: $secondary;
+}
+
+.nf-field-element > a {
+    background-color: none !important;
 }
 
 // Responsive – Desktop only
@@ -228,6 +365,10 @@ div.em-featured-image {
     ul.ms-auto {
         margin-left: 0 !important;
     }
+
+    .entry-content {
+        min-height: 88vh;
+    }
 }
 
 // Responsive – Mobile only
@@ -255,14 +396,6 @@ div.em-featured-image {
         background-color: $primary;
         color: $tertiary;
     }    
-    
-    //ul.dropdown-menu {
-    //    width: 100%;
-    //    font-size: 30px;
-    //    text-align: center;
-    //    background-color: $primary;
-    //    color: $tertiary;
-    //} 
 
     ul.dropdown-menu, li.menu-item, a.nav-link, a.dropdown-item {
         --bs-bg-opacity: 0 !important;
