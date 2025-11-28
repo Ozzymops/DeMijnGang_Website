@@ -23,6 +23,12 @@ body {
         url(../img/background.webp) center/cover no-repeat;
 }
 
+.menu-open {
+    overflow: hidden;
+    height: 100%;
+    touch-action: none;
+}
+
 div.entry-content {
     padding-left: .5rem;
     padding-right: .5rem;
@@ -319,6 +325,10 @@ div.em-featured-image {
         display: none;
     }
 
+    ul.navbar-nav {
+        height: 0 !important;
+    }
+
     .navbar-nav .dropdown:hover .dropdown-menu {
         display: block;
         margin-top: 0;
@@ -382,20 +392,33 @@ div.em-featured-image {
         pointer-events: none;
         z-index: -1;
         align-items: flex-start;
-        mask-image: radial-gradient(circle at top right, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
+        // mask-image: radial-gradient(circle at top right, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
+        mask-image: radial-gradient(circle at top, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
         mask-repeat: no-repeat;
         mask-size: cover;
-        background: radial-gradient(circle at top right, $tertiary 0%, $primary 40%);
+        // background: radial-gradient(circle at top right, $tertiary 0%, $primary 40%);
+        background: radial-gradient(circle at top, $tertiary 0%, $primary 40%);
     }
 
     ul.navbar-nav {
+        overflow-y: auto;
         position: fixed;
-        width: 50vw;
-        height: 100vh;
+        width: 100vw;
+        height: calc(100svh - 125px);
+        // max-height: 100vh;
+        top: 65px;
         left: 0;
         background-color: $primary;
         color: $tertiary;
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior: contain;
+        word-wrap: break-word;
+        z-index: 98;
     }    
+
+    button.navbar-toggle {
+        z-index: 99;
+    }
 
     ul.dropdown-menu, li.menu-item, a.nav-link, a.dropdown-item {
         --bs-bg-opacity: 0 !important;
