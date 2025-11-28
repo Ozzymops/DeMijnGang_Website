@@ -15021,6 +15021,80 @@ h2.font-bradleygratis.shadowtext, .font-bradleygratis.shadowtext.h2 {
   transition: color 0.15s ease-in-out;
 }
 
+.btn, .wpcf7 input[type=submit], .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-info a.button, .btn-secondary {
+  background-color: #3f1902;
+  color: #c7a56b;
+  --bs-btn-border-color: none;
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-bg: #3f1902;
+}
+
+.page-header {
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  text-align: center;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/div.webp");
+  -webkit-mask: url(../img/mask-ripped-top.webp) top/auto 50px repeat-x, linear-gradient(white, white) no-repeat center/100% calc(100% - 100px), url(../img/mask-ripped-bot.webp) bottom/auto 50px repeat-x;
+}
+.page-header h1, .page-header .h1, .page-header h2, .page-header .h2 {
+  color: white;
+  text-decoration: none;
+  font-family: "Bradley Gratis";
+}
+.page-header h1 a, .page-header .h1 a, .page-header h2 a, .page-header .h2 a {
+  color: white;
+  text-decoration: none;
+}
+.page-header h1, .page-header .h1 {
+  text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000;
+}
+.page-header h2, .page-header .h2 {
+  text-shadow: 1.5px 1.5px 0 #000, -1.5px 1.5px 0 #000, -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000;
+}
+
+.post {
+  padding: 1.5rem 0.5rem 1.5rem 0.5rem;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/div.webp");
+  -webkit-mask: url(../img/mask-ripped-top.webp) top/auto 50px repeat-x, linear-gradient(white, white) no-repeat center/100% calc(100% - 100px), url(../img/mask-ripped-bot.webp) bottom/auto 50px repeat-x;
+}
+.post .entry-header {
+  display: inherit;
+  text-align: center;
+}
+.post .entry-content {
+  min-height: 0 !important;
+  background-image: none;
+  -webkit-mask: none;
+}
+.post h1, .post .h1, .post h2, .post .h2 {
+  color: white;
+  text-decoration: none;
+  font-family: "Bradley Gratis";
+}
+.post h1 a, .post .h1 a, .post h2 a, .post .h2 a {
+  color: white;
+  text-decoration: none;
+}
+.post h1, .post .h1 {
+  text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000;
+}
+.post h2, .post .h2 {
+  text-shadow: 1.5px 1.5px 0 #000, -1.5px 1.5px 0 #000, -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000;
+}
+
+div.comments-area {
+  display: none;
+}
+
+nav.post-navigation {
+  display: none;
+}
+
 div.wrapper-header {
   position: sticky;
   top: 0;
@@ -15054,6 +15128,10 @@ a.nav-link:hover {
   color: #3f1902;
   text-shadow: 0 0 4px white;
   transition: text-shadow 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.navbar-toggler {
+  z-index: 99;
 }
 
 #wrapper-footer.wrapper {
@@ -15104,6 +15182,10 @@ a.nav-link:hover {
   width: 100%;
 }
 
+.wp-block-latest-posts.wp-block-latest-posts__list {
+  text-align: center;
+}
+
 .ripped-edges {
   -webkit-mask: url(../img/mask-ripped-top.webp) top/auto 50px repeat-x, linear-gradient(white, white) no-repeat center/100% calc(100% - 100px), url(../img/mask-ripped-bot.webp) bottom/auto 50px repeat-x;
 }
@@ -15130,6 +15212,43 @@ a.nav-link:hover {
 
 div.em-featured-image {
   padding: 0.5rem;
+}
+
+.ninja-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.ninja-alignleft {
+  float: left;
+  width: calc(50% - 20px);
+  margin-right: 10px;
+}
+
+.ninja-alignright {
+  float: right;
+  clear: none !important;
+  width: calc(50% - 20px);
+  margin-left: 10px;
+}
+
+.ninja-sendbutton {
+  background-color: #3f1902;
+  color: #c7a56b;
+}
+.ninja-sendbutton .ninja-sendbutton:hover {
+  color: white;
+  transition: color 0.15s ease-in-out;
+}
+
+.nf-field-element > input {
+  background: #3f1902;
+  color: #c7a56b;
+}
+
+.nf-field-element > a {
+  background-color: none !important;
 }
 
 @media (min-width: 768px) {
@@ -15177,6 +15296,9 @@ div.em-featured-image {
   }
   ul.ms-auto {
     margin-left: 0 !important;
+  }
+  .entry-content {
+    min-height: 88vh;
   }
 }
 @media (max-width: 768px) {

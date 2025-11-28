@@ -15242,6 +15242,11 @@ div.em-featured-image {
   transition: color 0.15s ease-in-out;
 }
 
+.nf-field-element > input {
+  background: #3f1902;
+  color: #c7a56b;
+}
+
 .nf-field-element > a {
   background-color: none !important;
 }
