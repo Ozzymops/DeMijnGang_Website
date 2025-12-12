@@ -72,6 +72,19 @@ h2.font-bradleygratis.shadowtext {
     --bs-btn-hover-bg: #3f1902; // $primary
 }
 
+// 'ensure' proper spacing of header, body, and footer
+.wrapper-header {
+    min-height: 10vh;
+}
+
+#single-wrapper.wrapper {
+    min-height: 80vh;
+}
+
+#wrapper-footer.wrapper {
+    min-height: 10vh;
+}
+
 // Post specific
 .page-header {
     padding: 1rem .5rem 1rem .5rem;
